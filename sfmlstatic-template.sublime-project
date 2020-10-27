@@ -1,0 +1,25 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd": "g++ src/*.cpp -o bin/debug/YOURNAMEHERE.exe -DSFML_STATIC -I include -L lib -static-libgcc -static-libstdc++ -lsfml-window-s -lsfml-system-s -lsfml-graphics-s -lsfml-audio-s -lsfml-network-s -lopengl32 -lwinmm -lgdi32 -lfreetype -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg -lws2_32 && cd bin/debug && YOURNAMEHERE.exe",
+			"name": "Build Debug",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd": "g++ src/*.cpp -o bin/release/YOURNAMEHERE.exe -DSFML_STATIC -I include -L lib -static-libgcc -static-libstdc++ -lsfml-window-s -lsfml-system-s -lsfml-graphics-s -lsfml-audio-s -lsfml-network-s -lopengl32 -lwinmm -lgdi32 -lfreetype -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg -lws2_32 && cd bin/release && YOURNAMEHERE.exe",
+			"name": "Build Release",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
