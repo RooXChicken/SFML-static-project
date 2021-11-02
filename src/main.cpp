@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 
-#when using these, you dont have to specify sf:: or std:: in front of certain functions.
+// when using these, you dont have to specify sf:: or std:: in front of certain functions.
 using namespace std;
 using namespace sf;
 
